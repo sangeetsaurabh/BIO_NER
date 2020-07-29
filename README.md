@@ -57,6 +57,18 @@ Both datasets generated excellent results, with more than 95% accuracy. Consider
 
 #### BC5CDR results -
 
+                    precision    recall  f1-score   support
+
+               O       0.99      0.98      0.98    110576
+      B-Chemical       0.92      0.89      0.90      5385
+       B-Disease       0.80      0.82      0.81      4424
+       I-Disease       0.69      0.80      0.74      2737
+      I-Chemical       0.79      0.86      0.82      1628
+
+        accuracy                           0.97    124750
+       macro avg       0.84      0.87      0.85    124750
+    weighted avg       0.97      0.97      0.97    124750
+
 
 #### BioNLP13CG results -
 
