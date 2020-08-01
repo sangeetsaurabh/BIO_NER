@@ -116,4 +116,67 @@ For the entities that have a reasonable number of samples, the results generated
                          weighted avg       0.94      0.95      0.94     52771
 
 
+## How did the models perform?
+
+In order to understand the performance, same results were generated using sciSpacy. Here are the results from sciSpacy -
+
+#### BC5CDR results using sciSpacy -
+
+                    precision    recall  f1-score   support
+
+             O       0.98      0.98      0.98    110576
+    B-Chemical       0.91      0.88      0.90      5385
+     B-Disease       0.82      0.81      0.81      4424
+     I-Disease       0.74      0.74      0.74      2737
+    I-Chemical       0.63      0.57      0.60      1628
+
+      accuracy                           0.96    124750
+     macro avg       0.82      0.80      0.81    124750
+    weighted avg     0.96      0.96      0.96    124750
+    
+#### BioNLP13CG results using sciSpacy -
+
+
+                                            precision    recall  f1-score   support
+
+                                    O       0.97      0.97      0.97     40642
+                         B-Amino_acid       0.00      0.00      0.00        62
+                  B-Anatomical_system       0.00      0.00      0.00        17
+                             B-Cancer       0.80      0.76      0.78       924
+                               B-Cell       0.78      0.75      0.77      1013
+                 B-Cellular_component       0.76      0.74      0.75       180
+    B-Developing_anatomical_structure       0.00      0.00      0.00        17
+               B-Gene_or_gene_product       0.87      0.85      0.86      2520
+       B-Immaterial_anatomical_entity       0.55      0.19      0.29        31
+             B-Multi-tissue_structure       0.73      0.68      0.70       303
+                              B-Organ       0.64      0.59      0.61       156
+                           B-Organism       0.85      0.82      0.83       518
+               B-Organism_subdivision       1.00      0.03      0.05        39
+                 B-Organism_substance       0.78      0.57      0.66       102
+             B-Pathological_formation       0.81      0.33      0.47        88
+                    B-Simple_chemical       0.75      0.69      0.72       727
+                             B-Tissue       0.53      0.64      0.58       184
+                         I-Amino_acid       0.00      0.00      0.00         3
+                  I-Anatomical_system       0.00      0.00      0.00         9
+                             I-Cancer       0.69      0.60      0.64       604
+                               I-Cell       0.71      0.63      0.67      1091
+                 I-Cellular_component       0.55      0.45      0.50        69
+    I-Developing_anatomical_structure       0.00      0.00      0.00         4
+               I-Gene_or_gene_product       0.73      0.77      0.75      2354
+       I-Immaterial_anatomical_entity       0.00      0.00      0.00        10
+             I-Multi-tissue_structure       0.65      0.66      0.65       162
+                              I-Organ       0.00      0.00      0.00        17
+                           I-Organism       0.13      0.48      0.21       120
+               I-Organism_subdivision       0.00      0.00      0.00         9
+                 I-Organism_substance       0.03      0.08      0.04        24
+             I-Pathological_formation       0.33      0.03      0.05        39
+                    I-Simple_chemical       0.51      0.47      0.49       622
+                             I-Tissue       0.57      0.46      0.51       111
+
+                             accuracy                           0.91     52771
+                            macro avg       0.48      0.40      0.41     52771
+                         weighted avg       0.91      0.91      0.91     52771
+                         
+ Biobert model performed better than sciSpacy with both BC5CDR and BioNLP13CG datasets.
+
 
